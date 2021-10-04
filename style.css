@@ -11,16 +11,15 @@ body {
 body a {
   text-decoration: none;
 }
-p {
-  margin: 0;
-  padding: 0;
-}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -28,11 +27,17 @@ h6 {
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0;
+}
+@font-face {
+  font-family: "space age";
+  src: url("typo/space\ age.ttf") format("ttf");
 }
 
 /************************
         HEADER
 ************************/
+
 /*************************LOGO***********************/
 nav img {
   height: 130px;
@@ -141,7 +146,6 @@ header .animaux ul li a {
 
 .containerdescription p {
   color: #787878;
-
   font-size: 17px;
 }
 .containerdescription {
@@ -149,17 +153,13 @@ header .animaux ul li a {
   margin-right: auto;
   margin-left: auto;
   margin-top: -80px;
-  margin-bottom: 50px;
   background-color: rgb(253, 250, 250);
-
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 /***********************************
             CAROUSSEL
 ************************************/
-.moncaroussel {
-  margin-bottom: 50px;
-}
+
 /**************TAILLE DES IMAGES*************/
 .carousel img {
   height: 450px;
@@ -205,15 +205,18 @@ header .animaux ul li a {
 .carousel-item h3 {
   margin: 30px 0 30px 0;
 }
-/**********NOS OFFRES DU MOMENT*************/
-.nosoffres {
-  margin-bottom: 50px;
-}
+
+/************************************
+        NOS OFFRES DU MOMENT
+*************************************/
+
 .nosoffres h3 {
   font-family: "Kurale", serif;
   position: relative;
   display: inline-block;
 }
+
+/******************BEFORE ET AFTER DU TITRE*************/
 .nosoffres h3::after {
   content: "";
   background-color: black;
@@ -231,4 +234,189 @@ header .animaux ul li a {
   position: absolute;
   top: 17px;
   left: -415px;
+}
+/***********************************
+      ARTICLES DU MOMENT
+************************************/
+.slidearticle {
+  margin-bottom: 50px;
+}
+
+/******BOX SHADOW DES ARTICLES ET PADDING INTERIEUR*****/
+.descriptionarticle {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 20px;
+}
+/****************DIMENSION IMAGE ARTICLE****************/
+.descriptionarticle img {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+}
+/****************FLEX COLUMN DE TOUTES LES LI****************/
+.slidearticle ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.descriptionarticle:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/****************COEUR**************/
+.slidearticle .coeur {
+  font-size: 25px;
+}
+/*************NOM ARTICLE**********/
+.slidearticle .nomarticle {
+  font-size: 13px;
+  font-weight: bolder;
+}
+/********ETOILE AVIS ARTICLE**********/
+.slidearticle .etoile p {
+  padding-left: 10px;
+  font-size: 13px;
+  color: rgba(0, 0, 255, 0.698);
+}
+.slidearticle .etoile {
+  padding: 20px 0;
+}
+
+.slidearticle .etoile i {
+  font-size: 14px;
+}
+/*************PRIX ARTICLE**********/
+.slidearticle .prix i {
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  border-radius: 25px;
+  background-color: rgb(144, 92, 76);
+  transform: rotate(30deg);
+}
+.slidearticle .prix p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*************STOCK ARTICLE***********/
+.slidearticle .stock {
+  padding-top: 20px;
+}
+.slidearticle .stock span {
+  height: 8px;
+  width: 8px;
+  border-radius: 25px;
+  background-color: rgba(10, 75, 26, 0.541);
+}
+.slidearticle .stock p {
+  padding-left: 20px;
+  font-size: 14px;
+}
+/************************************
+        LES PLUS VENDUS
+*************************************/
+
+.lesplusvendus h3 {
+  font-family: "Kurale", serif;
+  position: relative;
+  display: inline-block;
+}
+
+/*****************BEFORE ET AFTER DU TITRE*************/
+.lesplusvendus h3::after {
+  content: "";
+  background-color: black;
+  width: 400px;
+  height: 1px;
+  position: absolute;
+  top: 17px;
+  right: -420px;
+}
+.lesplusvendus h3::before {
+  content: "";
+  background-color: black;
+  width: 400px;
+  height: 1px;
+  position: absolute;
+  top: 17px;
+  left: -415px;
+}
+/************************************
+        PRIX MALIN - NOUVEAUTES
+*************************************/
+
+.prixmalin {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.337), rgba(0, 0, 0, 0.337)),
+    url("img/image/photo-1535930749574-1399327ce78f.jfif");
+  background-position: center;
+  background-size: cover;
+  padding-top: 500px;
+}
+.nouveautes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.337), rgba(0, 0, 0, 0.337)),
+    url("img/image/souris-qui-est-etonnee.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 500px;
+}
+/************************************
+        PLUS DE SERVICES
+*************************************/
+.plusdeservices h3 {
+  font-family: "Kurale", serif;
+  position: relative;
+  display: inline-block;
+}
+/*****************BEFORE ET AFTER DU TITRE*************/
+.plusdeservices h3::after {
+  content: "";
+  background-color: black;
+  width: 400px;
+  height: 1px;
+  position: absolute;
+  top: 17px;
+  right: -420px;
+}
+.plusdeservices h3::before {
+  content: "";
+  background-color: black;
+  width: 400px;
+  height: 1px;
+  position: absolute;
+  top: 17px;
+  left: -415px;
+}
+/************************************
+        ANIMAUX DANS L'ESPACE
+*************************************/
+
+.animauxespace {
+  background-image: url("img/image/AnimalsThroughTimeM8-Thumbnail-1920x1080.png_dl=1");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 500px;
+}
+.animauxespace h3 {
+  position: absolute;
+  font-family: "space age";
+  bottom: 320px;
+  left: 150px;
+}
+.photoespace {
+  position: relative;
+}
+/************************************
+              AVANTAGES
+*************************************/
+.avantages .quatreavantages i {
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+.avantages {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
+    url("img/image/footer1.jpg");
 }
