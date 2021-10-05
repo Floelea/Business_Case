@@ -31,13 +31,18 @@ ul {
 }
 @font-face {
   font-family: "space age";
-  src: url("typo/space\ age.ttf") format("ttf");
+  src: url("typo/spaceage.ttf") format("truetype");
 }
 
 /************************
         HEADER
 ************************/
-
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+}
 /*************************LOGO***********************/
 nav img {
   height: 130px;
@@ -91,11 +96,11 @@ header nav ul .rechercher .searchbar {
             HEADER ANIMAUX
 ************************************/
 
-header .animaux ul li {
+.animaux ul li {
   width: calc(100% / 7);
   text-align: center;
 }
-header .animaux ul li a {
+.animaux ul li a {
   color: black;
   font-weight: bold;
   font-size: 17px;
@@ -190,7 +195,7 @@ header .animaux ul li a {
   border-radius: 50%;
 }
 .carousel-caption {
-  z-index: 100;
+  z-index: 1;
 }
 /**************BOUTON BTN*************/
 .monbouton a {
@@ -413,10 +418,77 @@ header .animaux ul li a {
               AVANTAGES
 *************************************/
 .avantages .quatreavantages i {
-  font-size: 50px;
+  font-size: 30px;
   padding-bottom: 30px;
 }
 .avantages {
   background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
     url("img/image/footer1.jpg");
+}
+
+/************************************
+              FOOTER
+*************************************/
+footer {
+  background-color: rgba(144, 92, 76, 0.308);
+}
+/*********NEWSLETTER********/
+.newsletter h6 {
+  font-size: 18px;
+}
+.newsletter p {
+  color: #787878;
+}
+.question h6 {
+  font-size: 18px;
+}
+/*********BOUTON MAIL********/
+.newsletter input[type="email"] {
+  padding: 8px 10px;
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+}
+.newsletter input[type="email"]::placeholder {
+  font-size: 13px;
+}
+/*********BOUTON JE M'ABONNE********/
+.newsletter li input[type="submit"] {
+  background-color: rgb(61, 138, 145);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+/*********LOGO RESEAUX********/
+.newsletter .logo i {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+}
+
+/*********QUESTION********/
+.question {
+  border: 1px solid black;
+}
+.question p {
+  color: #787878;
+}
+
+.horaire {
+  font-size: 13px;
+}
+.avisverifies img {
+  width: 190px;
+  height: 40px;
+}
+.nospartenaires img {
+  height: 100px;
+  width: 100px;
 }
