@@ -43,6 +43,11 @@ header {
   background-color: white;
   z-index: 9999;
 }
+.navmobile,
+.recherchemobile {
+  display: none;
+}
+
 /*************************LOGO***********************/
 nav img {
   height: 130px;
@@ -521,4 +526,159 @@ footer {
 }
 .santevet {
   object-fit: cover;
+}
+
+/*************************************
+            MEDIA
+*************************************/
+
+/*mobile*/
+
+@media (max-width: 768px) {
+  /***************************************
+            HEADER
+***************************************/
+  .navpc,
+  .hranimaux,
+  .animaux {
+    display: none;
+  }
+  .navmobile input {
+    width: auto;
+  }
+  .navmobile {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: rgb(144, 92, 76);
+  }
+  .navmobile img {
+    height: 90px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .navmobile i {
+    font-size: 25px;
+    color: white;
+  }
+  /*************BARRE DE RECHERCHE MOBILE***********/
+  .recherchemobile {
+    display: flex;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.082);
+  }
+  .recherchemobile input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.294);
+    padding: 1px 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .recherchemobile ::placeholder {
+    font-size: 13px;
+    color: black;
+  }
+  .recherchemobile input:focus {
+    outline: none;
+  }
+  /*************MON COMPTE ET NOUS TROUVER MOBILE***********/
+
+  .moncomptemobile,
+  .noustrouvermobile {
+    background: rgba(0, 0, 0, 0.027);
+  }
+  .moncomptemobile i,
+  .noustrouvermobile i {
+    color: rgb(144, 92, 76);
+  }
+  /*************BURGER***********/
+  .navmobile #burger {
+    display: block;
+    appearance: none;
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+  }
+  .navmobile #burger::before {
+    content: "\f0c9";
+  }
+  .navmobile #burger:checked::before {
+    content: "\f00d";
+  }
+  .navmobile ul {
+    height: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: white;
+    top: 110px;
+    width: 45%;
+    left: 0;
+    overflow: hidden;
+  }
+  .navmobile ul li {
+    text-align: left;
+    width: 100%;
+    padding: 15px 25px;
+  }
+  .navmobile ul li a {
+    color: rgb(144, 92, 76);
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .navmobile #burger:checked + ul {
+    height: auto;
+  }
+  /*************BEFORE ET AFTER***********/
+  .nosoffres h3::after {
+    width: 100px;
+    right: -150px;
+  }
+  .nosoffres h3::before {
+    width: 100px;
+    left: -145px;
+  }
+  .lesplusvendus h3::after {
+    width: 100px;
+    right: -150px;
+  }
+  .lesplusvendus h3::before {
+    width: 100px;
+    left: -145px;
+  }
+  .plusdeservices h3::after {
+    width: 100px;
+    right: -150px;
+  }
+  .plusdeservices h3::before {
+    width: 100px;
+    left: -145px;
+  }
+  /***********************************
+            DESCRIPTION 
+************************************/
+  .containerdescription p {
+    font-size: 15px;
+  }
+  .containerdescription {
+    max-width: 600px;
+    margin-top: -50px;
+  }
+  /***********************************
+        PRIX MALIN - NOUVEAUTES 
+************************************/
+  .prixmalin {
+    background-position: 50% 30%;
+    padding-top: 400px;
+  }
+  .nouveautes {
+    background-position: 50% 30%;
+    padding-top: 400px;
+  }
 }

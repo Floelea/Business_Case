@@ -23,9 +23,10 @@
                                             HEADER
 ---------------------------------------------------------------------------------------------------------->
     <header>
-        <nav class="container mabarredenav">
-            <ul class=" d-lg-flex p-lg-0 align-items-lg-center justify-content-lg-around m-lg-0">
-                <li class="logonavbar "> <img src="img/logo3/La Nîmesalerie-logos_transparent.png" alt="photologo">
+        <nav class="container navpc">
+            <ul class=" mabarredenav d-lg-flex p-lg-0 align-items-lg-center justify-content-lg-around m-lg-0">
+                <li class="logonavbar "> <a href="#"><img src="img/logo3/La Nîmesalerie-logos_transparent.png"
+                            alt="photologo"></a>
                 </li>
 
                 <!-----------------BARRE DE RECHERCHE-------------->
@@ -41,30 +42,78 @@
                     </li>
                 </form>
                 <!-----------------SE CONNECTER-------------->
-                <li class="seconnecter d-lg-flex align-items-lg-center p-lg-0"><i class="far fa-user"></i>
+
+                <li class="seconnecter d-lg-flex align-items-lg-center p-lg-0"><a href="#"><i
+                            class="far fa-user"></i></a>
                     <div>
                         <p class="m-0 fw-bolder">Florian</p>
                         <p class="m-0">Me deconnecter</p>
                     </div>
                 </li>
                 <!-----------------MON PANIER-------------->
-                <li class="monpanier d-lg-flex align-items-lg-center "><i class="fas fa-shopping-basket"></i>
+                <li class="monpanier d-lg-flex align-items-lg-center "><a href="#"><i
+                            class="fas fa-shopping-basket"></i></a>
                     <p class="m-0">Mon panier</p>
                 </li>
                 <!-----------------NOUS TROUVER-------------->
-                <li class="noustrouver d-lg-flex align-items-lg-center"><i class="fas fa-map-marker-alt"></i>
+                <li class="noustrouver d-lg-flex align-items-lg-center"><a href="#"><i
+                            class="fas fa-map-marker-alt"></i></a>
                     <p class="m-0">Nous trouver</p>
                 </li>
+
             </ul>
         </nav>
-        <!--------------------------------------------------------------------------------------------------------
+
+        <!--------------------------HEADER MOBILE-------------------------->
+        <nav class="navmobile">
+
+            <input type="checkbox" id="burger">
+
+            <ul>
+                <li class="moncomptemobile"><i class="far fa-user pe-3 "></i><a class="fw-light" href="#">Mon
+                        compte</a>
+                </li>
+                <hr class="hrmobile m-0">
+                <li class="noustrouvermobile"><i class="fas fa-map-marker-alt pe-3 "></i><a class="fw-light"
+                        href="#">Nous trouver</a>
+                </li>
+
+                <li><a href="#">Chien</a></li>
+
+                <li><a href="#">Chat</a></li>
+
+                <li><a href="#">Oiseaux</a></li>
+
+                <li><a href="#">Poissons</a></li>
+
+                <li><a href="#">Reptiles</a></li>
+
+                <li><a href="#">Rongeurs</a></li>
+
+                <li><a href="#">Elevages</a></li>
+
+            </ul>
+            <a href="#"> <img src="img/logo3/La Nîmesalerie-logos_white.png" alt="photologo"></a>
+            <div class="d-flex align-items-center">
+                <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+        <form class="recherchemobile">
+            <!--------MANQUE INFO RECUPERER LES DONNEES DU FORMULAIRE--------->
+            <label for="recherchemobile"></label>
+            <button class="border-0 bg-transparent" type="submit"> <i class="fas fa-search"></i></button>
+            <input class="" type="search" id="recherchemobile" name="recherche" placeholder="Que recherchez-vous ? ">
+        </form>
+    </header>
+    <!--------------------------------------------------------------------------------------------------------
                                                 ANIMAUX
 ---------------------------------------------------------------------------------------------------------->
-    </header>
-    <hr>
-    <section class="animaux container">
 
-        <ul class="m-lg-0  d-lg-flex align-items-lg-center">
+    <hr class="hranimaux">
+    <section class="animaux container ">
+
+
+        <ul class="m-lg-0 d-lg-flex align-items-lg-center">
 
             <li><a href="#">Chien</a></li>
 
@@ -81,8 +130,9 @@
             <li><a href="#">Elevages</a></li>
 
         </ul>
+
     </section>
-    <hr>
+    <hr class="hranimaux">
 
     <!--------------------------------------------------------------------------------------------------------
                                                 PHOTO SOUS HEADER
@@ -358,7 +408,7 @@
                     <a class="monbouton" href="">
                         Je découvre
                     </a>
-                    <h3 class="my-sm-4">Prix malin</h3>
+                    <h3 class="my-lg-4 my-sm-4 pb-sm-4">Prix malin</h3>
                 </li>
 
 
@@ -366,7 +416,7 @@
                     <a href="">
                         Je découvre
                     </a>
-                    <h3 class="my-sm-4 ">Nouveautés</h3>
+                    <h3 class="my-lg-4 my-sm-4 pb-sm-4">Nouveautés</h3>
                 </li>
 
             </ul>
