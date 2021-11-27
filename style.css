@@ -35,6 +35,49 @@ ul {
 }
 
 /************************
+        FORM
+************************/
+#ensembleformulaire {
+  display: flex;
+  justify-content: space-around;
+}
+.bodyformulaire {
+  background-color: rgba(0, 0, 0, 0.018);
+}
+
+#formulaireseconnecter input[type="email"],
+input[type="password"],
+input[type="submit"],
+button {
+  padding: 8px 10px;
+  border-radius: 25px;
+  border: 1px solid #c8c8c8;
+  width: 100%;
+  outline: none;
+}
+#formulaireseconnecter input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  font-size: 13px;
+}
+
+#formulaireseconnecter p {
+  font-size: 12px;
+}
+
+#formulaireseconnecter label {
+  font-size: 14px;
+}
+#formulaireseconnecter input[type="submit"],
+button {
+  background-color: rgb(61, 138, 145);
+  color: white;
+}
+
+.bodyformulaire h3,
+h5 {
+  color: rgb(144, 92, 76);
+}
+/************************
         HEADER
 ************************/
 header {

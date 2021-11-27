@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Nîmesalerie</title>
+
+    <script
+      src="https://kit.fontawesome.com/e772130b79.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kurale&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js"defer></script>
+  </head>
+
+  <body>
+    <!--------------------------------------------------------------------------------------------------------
+                                            HEADER
+---------------------------------------------------------------------------------------------------------->
+    <header>
+      <nav class="container navpc">
+        <ul
+          class="
+            mabarredenav
+            d-lg-flex
+            p-lg-0
+            align-items-lg-center
+            justify-content-lg-around
+            m-lg-0
+          "
+        >
+          <li class="logonavbar">
+            <a href="#"
+              ><img
+                src="img/logo3/La Nîmesalerie-logos_transparent.png"
+                alt="photologo"
+            /></a>
+          </li>
+
+          <!-----------------BARRE DE RECHERCHE-------------->
+
+          <form class="rechercher">
+            <!--------MANQUE INFO RECUPERER LES DONNEES DU FORMULAIRE--------->
+            <li class="searchbar d-lg-flex align-items-lg-center">
+              <label for="recherchesite"></label>
+              <button class="border-0 bg-transparent" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                class="border-0"
+                type="search"
+                id="recherchesite"
+                name="recherche"
+                placeholder="Que recherchez-vous ? "
+              />
+            </li>
+          </form>
+          <!-----------------SE CONNECTER-------------->
+
+          <li class="seconnecter d-lg-flex align-items-lg-center p-lg-0">
+            <a href="seconnecter.html"><i class="far fa-user"></i></a>
+            <div>
+              <p class="m-0 fw-bolder">Mon compte</p>
+              <p class="m-0">Se connecter</p>
+            </div>
+          
+          </li>
+
+
+          
+
+
+
+
+
+          <!-----------------MON PANIER-------------->
+          <li class="monpanier d-lg-flex align-items-lg-center">
+            <a href="#"><i class="fas fa-shopping-basket"></i></a>
+            <p class="m-0">Mon panier</p>
+          </li>
+          <!-----------------NOUS TROUVER-------------->
+          <li class="noustrouver d-lg-flex align-items-lg-center">
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+            <p class="m-0">Nous trouver</p>
+          </li>
+        </ul>
+      </nav>
+
+      <!--------------------------HEADER MOBILE-------------------------->
+      <nav class="navmobile">
+        <input type="checkbox" id="burger" />
+
+        <ul>
+          <li class="moncomptemobile">
+            <i class="far fa-user pe-3"></i
+            ><a class="fw-light" href="#">Mon compte</a>
+          </li>
+          <hr class="hrmobile m-0" />
+          <li class="noustrouvermobile">
+            <i class="fas fa-map-marker-alt pe-3"></i
+            ><a class="fw-light" href="#">Nous trouver</a>
+          </li>
+
+          <li><a href="#">Chien</a></li>
+
+          <li><a href="#">Chat</a></li>
+
+          <li><a href="#">Oiseaux</a></li>
+
+          <li><a href="#">Poissons</a></li>
+
+          <li><a href="#">Reptiles</a></li>
+
+          <li><a href="#">Rongeurs</a></li>
+
+          <li><a href="#">Elevages</a></li>
+        </ul>
+        <a href="#">
+          <img src="img/logo3/La Nîmesalerie-logos_white.png" alt="photologo"
+        /></a>
+        <div class="d-flex align-items-center">
+          <a href="#"> <i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </nav>
+      <form class="recherchemobile">
+        <!--------MANQUE INFO RECUPERER LES DONNEES DU FORMULAIRE--------->
+        <label for="recherchemobile"></label>
+        <button class="border-0 bg-transparent" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+        <input
+          class="inputrecherchemobile"
+          type="search"
+          id="recherchemobile"
+          name="recherche"
+          placeholder="Que recherchez-vous ? "
+        />
+      </form>
+    </header>
+    <!--------------------------------------------------------------------------------------------------------
+                                                ANIMAUX
+---------------------------------------------------------------------------------------------------------->
+
+    <hr class="hranimauxhaut mt-0" />
+    <section class="animaux container">
+      <ul class="m-lg-0 d-lg-flex align-items-lg-center">
+        <li><a href="#">Chien</a></li>
+
+        <li><a href="#">Chat</a></li>
+
+        <li><a href="#">Oiseaux</a></li>
+
+        <li><a href="#">Poissons</a></li>
+
+        <li><a href="#">Reptiles</a></li>
+
+        <li><a href="#">Rongeurs</a></li>
+
+        <li><a href="#">Elevages</a></li>
+      </ul>
+    </section>
+    <hr class="hranimauxbas mb-0" />
+
+
+
+     <!--------------------------------------------------------------------------------------------------------
+                                                ESPACE DE CONNEXION
+---------------------------------------------------------------------------------------------------------->
+   <div class="bodyformulaire p-lg-5">
+     <h3 class="pb-lg-5">Connectez-vous</h3>
+   <div id="ensembleformulaire">
+   <form action="" id="formulaireseconnecter">
+     <h5 class="fw-bold text-center">J'ai déjà un compte</h5>
+     <div>
+       <label class="mt-lg-4" for="email">Adresse e-mail*</label>
+     <input class="" type="email" name="E-mail" id="" placeholder="E-mail"></div>
+     <div>
+      <label class="mt-lg-4" for="password">Mot de passe*</label>
+       <input class="" type="password" name="" id="" placeholder="Mot de passe">
+     </div>
+     <div>
+     <input class="my-lg-4" type="checkbox" name="password" id="password">
+     <label for="password">Se souvenir de moi</label>
+    </div>
+     <input type="submit" value="Me connecter">
+     <p class="mt-lg-3">* Champs obligatoires</p>
+   </form> 
+   <div>
+    <h5 class="fw-bold text-center">Vous n'avez pas de compte</h5>
+     <button class="mt-lg-4">Créer votre compte</button>
+   </div>
+  </div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------
+                                    FOOTER
+---------------------------------------------------------------------------------------------------------->
+
+    <footer>
+      <div class="container monfooter row py-lg-5">
+        <!--------------------NEWSLETTER--------------------->
+        <ul class="newsletter col-lg-4">
+          <li>
+            <h6 class="text-white fw-bolder pb-lg-3 py-sm-3">
+              Rejoignez la communauté La Nîmesalerie
+            </h6>
+          </li>
+          <li class="pb-lg-3 pb-sm-3">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+              nisi quas rerum inventore porro est, dolores aperiam aut modi quod
+              fugit, officiis natus quia voluptatem.
+            </p>
+          </li>
+          <li class="pb-lg-3 pb-sm-3">
+            <input type="email" name="email" placeholder="Votre e-mail" />
+          </li>
+          <li class="text-center pb-lg-3 pb-sm-3">
+            <input type="submit" value="Je m'abonne" />
+          </li>
+          <li class="logo pb-sm-5">
+            <i class="fab fa-circle fa-facebook-f rounded-circle"></i>
+            <i class="fab fa-circle fa-instagram rounded-circle"></i>
+            <i class="fab fa-youtube rounded-circle"></i>
+            <i class="fab fa-pinterest-p rounded-circle"></i>
+          </li>
+        </ul>
+        <!--------------------QUESTION--------------------->
+        <ul class="col-lg-4 questionhoraires">
+          <ul class="py-sm-3 question text-center text-white mb-3">
+            <li>
+              <h6 class="text-white fw-bolder pb-lg-3 pt-lg-5">
+                Une question ?
+              </h6>
+            </li>
+            <li>
+              <p class="pb-lg-3 text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati asperiores, vitae, dolore dignissimos neque aut
+                doloribus laborum enim soluta iusto fuga id esse rem illum?
+              </p>
+            </li>
+            <div class="horaire pb-lg-3">
+              <li>
+                <p>HEURES D'OUVERTURE</p>
+              </li>
+              <li>
+                <p>
+                  Du lundi au vendredi de 9h à 13h et de 14h à18h<br />le samedi
+                  de 10h à 13h et de 14h à 18h.
+                </p>
+              </li>
+            </div>
+            <li class="d-flex justify-content-center pb-lg-5">
+              <i class="fas fa-phone-alt p pe-3"></i>
+              <p>04 56 25 36 58</p>
+            </li>
+          </ul>
+
+          <ul class="moyenspaiements pb-sm-3">
+            <li class="paiements text-white pb-lg-3 pb-sm-3 text-center">
+              <h6 class="fw-bolder">Nos moyens de paiements</h6>
+            </li>
+            <li class="text-center fs-2">
+              <i class="fab fa-cc-visa pe-3"></i
+              ><i class="fab fa-cc-mastercard pe-3"></i
+              ><i class="fab fa-cc-amex pe-3"></i
+              ><i class="fab fa-cc-paypal"></i>
+            </li>
+          </ul>
+        </ul>
+        <!--------------------NOS MARQUES--------------------->
+        <ul class="col-lg-4 marquespartenaires text-center">
+          <ul class="nosmarques mb-3">
+            <li>
+              <h6 class="text-white fw-bolder pb-lg-3 pb-sm-3">Nos marques</h6>
+            </li>
+            <li class="">
+              <img
+                src="img/image/—Pngtree—inspiration horse head  illustration_5233399.png"
+                alt=""
+              />
+              <img
+                src="img/image/—Pngtree—golden horse logo stallion horse_3628115.png"
+                alt=""
+              />
+              <img
+                src="img/image/kisspng-labrador-retriever-cat-boxer-animal-rescue-group-behavior-imagine-dog-training-5d21730f632fb0.2431471915624732314063.png"
+                alt=""
+              />
+              <img
+                src="img/image/kisspng-david-zwirner-gallery-art-basel-paper-painting-ill-vector-flower-chestnut-squirrel-5a9abf785172f3.6831531715200910003336.png"
+                alt=""
+              />
+            </li>
+          </ul>
+          <!--------------------NOS PARTENAIRES--------------------->
+          <ul class="nospartenaires pb-sm-3">
+            <li>
+              <h6 class="text-white fw-bolder pb-lg-3 pb-sm-3">
+                Nos partenaires
+              </h6>
+            </li>
+            <li>
+              <img
+                class="spa"
+                src="img/image/20161112112229!Logo_de_la_SPA_(France).png"
+                alt=""
+              />
+              <img
+                class="santevet"
+                src="img/image/kisspng-logo-nur-der-tod-ist-ohne-makel-human-behavior-te-5b5893cd7ae640.7317764215325316615034.png"
+                alt=""
+              />
+              <img
+                src="img/image/kisspng-pet-sitting-dog-walking-rover-com-logo-dog-logo-5b0c84b26c2e53.2747908015275470584431.png"
+                alt=""
+              />
+              <img src="img/image/unnamed.png" alt="" />
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
