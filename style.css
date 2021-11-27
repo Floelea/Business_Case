@@ -43,6 +43,11 @@ header {
   background-color: white;
   z-index: 9999;
 }
+.navmobile,
+.recherchemobile {
+  display: none;
+}
+
 /*************************LOGO***********************/
 nav img {
   height: 130px;
@@ -422,7 +427,7 @@ header nav ul .rechercher .searchbar {
   padding-bottom: 30px;
 }
 .avantages {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/image/footer1.jpg");
 }
 
@@ -432,6 +437,7 @@ header nav ul .rechercher .searchbar {
 footer {
   background-color: rgba(144, 92, 76, 0.308);
 }
+
 /*********NEWSLETTER********/
 .newsletter h6 {
   font-size: 18px;
@@ -472,10 +478,10 @@ footer {
   color: white;
   padding: 10px;
 }
-.newsletter {
+/* .newsletter {
   position: relative;
   top: 45px;
-}
+} */
 /*********QUESTION********/
 
 .question {
@@ -491,6 +497,7 @@ footer {
 .paiements h6 {
   font-size: 18px;
 }
+
 /*********NOS MARQUES********/
 
 .nosmarques h6 {
@@ -512,13 +519,219 @@ footer {
   padding-left: 10px;
   object-fit: center;
 }
-.marquespartenaires {
+/* .marquespartenaires {
   position: relative;
   top: 45px;
-}
+} */
 .spa {
   object-fit: cover;
 }
 .santevet {
   object-fit: cover;
+}
+
+/*************************************
+            MEDIA
+*************************************/
+
+/*mobile*/
+
+@media (max-width: 768px) {
+  /***************************************
+            HEADER
+***************************************/
+  .navpc,
+  .hranimaux,
+  .animaux {
+    display: none;
+  }
+  .navmobile input {
+    width: auto;
+  }
+  .navmobile {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: rgb(144, 92, 76);
+  }
+  .navmobile img {
+    height: 90px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .navmobile i {
+    font-size: 25px;
+    color: white;
+  }
+  /*************BARRE DE RECHERCHE MOBILE***********/
+  .recherchemobile {
+    display: flex;
+    padding: 10px 0;
+    box-shadow: rgba(50, 50, 93, 0.062) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.384) 0px 18px 36px -18px inset;
+    border-radius: 50px;
+  }
+
+  .recherchemobile input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.294);
+    padding: 1px 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .recherchemobile ::placeholder {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.521);
+  }
+  .recherchemobile input:focus {
+    outline: none;
+  }
+  /*************MON COMPTE ET NOUS TROUVER MOBILE***********/
+
+  .moncomptemobile,
+  .noustrouvermobile {
+    background: rgba(0, 0, 0, 0.027);
+  }
+  .moncomptemobile i,
+  .noustrouvermobile i {
+    color: rgb(144, 92, 76);
+  }
+  /*************BURGER***********/
+  .navmobile #burger {
+    display: block;
+    appearance: none;
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+  }
+  .navmobile #burger::before {
+    content: "\f0c9";
+  }
+  .navmobile #burger:checked::before {
+    content: "\f00d";
+  }
+  .navmobile ul {
+    height: 0;
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: white;
+    top: 110px;
+    width: 45%;
+    left: 0;
+    overflow: hidden;
+  }
+  .navmobile ul li {
+    text-align: left;
+    width: 100%;
+    padding: 15px 25px;
+  }
+  .navmobile ul li a {
+    color: rgb(144, 92, 76);
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .navmobile #burger:checked + ul {
+    height: auto;
+  }
+
+  /**********PHOTO SOUS HEADER*************/
+  .photosousheader {
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    padding-top: 150px;
+  }
+  .photosousheader h1 {
+    padding-top: 0;
+    padding-bottom: 40px;
+    font-size: 45px;
+  }
+
+  .photosousheader h1::after,
+  .photosousheader h1::before {
+    display: none;
+  }
+
+  /*************BEFORE ET AFTER***********/
+  .nosoffres h3::after {
+    display: none;
+  }
+  .nosoffres h3::before {
+    display: none;
+  }
+  .lesplusvendus h3::after {
+    display: none;
+  }
+  .lesplusvendus h3::before {
+    display: none;
+  }
+  .plusdeservices h3::after {
+    display: none;
+  }
+  .plusdeservices h3::before {
+    display: none;
+  }
+  /***********************************
+            DESCRIPTION 
+************************************/
+  .containerdescription p {
+    font-size: 12px;
+  }
+  .containerdescription {
+    width: auto;
+    margin-top: 0px;
+  }
+  .descriptionarticle {
+    padding: 0px;
+  }
+  /***********************************
+        PRIX MALIN - NOUVEAUTES 
+************************************/
+  .prixmalin {
+    background-position: 50% 30%;
+    padding-top: 400px;
+  }
+  .nouveautes {
+    background-position: 50% 30%;
+    padding-top: 400px;
+  }
+}
+.prixmalinnouveautes ul {
+  padding: 0;
+}
+/***********************************
+        ANIMAUX - ESPACE 
+************************************/
+
+.animauxespace h3 {
+  position: absolute;
+  font-family: "space age";
+  bottom: 380px;
+  left: 30px;
+}
+
+.photoespace img {
+  width: 200px;
+}
+
+.photoespace .monbouton {
+  margin: 0;
+}
+
+/************************************
+              AVANTAGES
+*************************************/
+
+.avantages {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/image/footer1.jpg");
+  background-repeat: no-repeat;
+  background-position: 45% 50%;
 }
