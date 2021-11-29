@@ -35,48 +35,61 @@ ul {
 }
 
 /************************
-        FORM
+        FORMULAIRE SE CONNECTER SUR PAGE SECONNECTER.HTML
 ************************/
-#ensembleformulaire {
-  display: flex;
-  justify-content: space-around;
+
+.debutdivconnexioninscription h2,
+h5 {
+  font-family: "Kurale", serif;
+  color: rgb(144, 92, 76);
 }
-.bodyformulaire {
-  background-color: rgba(0, 0, 0, 0.018);
+.connexioninscription {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#formulaireseconnecter input[type="email"],
+.formulaireinscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulaireinscription h5 {
+  margin-bottom: 43px;
+}
+.formulaireconnexion form {
+  display: flex;
+  flex-direction: column;
+}
+.formulaireconnexion input[type="email"],
 input[type="password"],
 input[type="submit"],
 button {
   padding: 8px 10px;
   border-radius: 25px;
   border: 1px solid #c8c8c8;
-  width: 100%;
+  width: 90%;
   outline: none;
 }
-#formulaireseconnecter input[type="email"]::placeholder,
+.formulaireconnexion input[type="email"]::placeholder,
 input[type="password"]::placeholder {
   font-size: 13px;
 }
 
-#formulaireseconnecter p {
+.formulaireconnexion p {
   font-size: 12px;
 }
 
-#formulaireseconnecter label {
+.formulaireconnexion label {
   font-size: 14px;
 }
-#formulaireseconnecter input[type="submit"],
+.formulaireconnexion input[type="submit"],
 button {
   background-color: rgb(61, 138, 145);
   color: white;
 }
 
-.bodyformulaire h3,
-h5 {
-  color: rgb(144, 92, 76);
-}
 /************************
         HEADER
 ************************/
@@ -118,26 +131,38 @@ header nav ul .rechercher .searchbar {
 .searchbar input:focus {
   outline: none;
 }
-
+.searchbar input::placeholder {
+  font-size: 13px;
+}
 .searchbar i {
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(144, 92, 76, 0.5);
 }
 /***********************SE CONNECTER******************/
 .seconnecter i {
   padding-right: 20px;
-  font-size: 30px;
+  font-size: 25px;
+}
+.seconnecter p {
+  font-size: 13px;
 }
 
 /***********************MON PANIER******************/
 .monpanier i {
   padding-right: 20px;
-  font-size: 30px;
+  font-size: 25px;
+}
+.monpanier p {
+  font-size: 13px;
 }
 /***********************NOUS TROUVER******************/
 .noustrouver i {
   padding-right: 20px;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.noustrouver p {
+  font-size: 13px;
 }
 
 /***********************************
@@ -151,7 +176,7 @@ header nav ul .rechercher .searchbar {
 .animaux ul li a {
   color: black;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /***********************************
@@ -584,7 +609,8 @@ footer {
             HEADER
 ***************************************/
   .navpc,
-  .hranimaux,
+  .hranimauxhaut,
+  .hranimauxbas,
   .animaux {
     display: none;
   }
@@ -777,4 +803,17 @@ footer {
     url("img/image/footer1.jpg");
   background-repeat: no-repeat;
   background-position: 45% 50%;
+}
+/************************************
+              PAGE FORMULAIRE SECONNECTER.HTML
+*************************************/
+
+.formulaireconnexion input[type="email"],
+input[type="password"],
+input[type="submit"],
+button {
+  width: 100%;
+}
+.formulaireinscription {
+  align-items: flex-start;
 }
