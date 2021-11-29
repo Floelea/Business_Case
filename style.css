@@ -609,8 +609,12 @@ footer {
             HEADER
 ***************************************/
   .navpc,
+<<<<<<< HEAD
   .hranimauxhaut,
   .hranimauxbas,
+=======
+  .hranimaux,
+>>>>>>> af20980bf2002ae8eb8c9ecec80cecbc4063d824
   .animaux {
     display: none;
   }
@@ -638,11 +642,16 @@ footer {
   .recherchemobile {
     display: flex;
     padding: 10px 0;
+<<<<<<< HEAD
     box-shadow: rgba(50, 50, 93, 0.062) 0px 30px 60px -12px inset,
       rgba(0, 0, 0, 0.384) 0px 18px 36px -18px inset;
     border-radius: 50px;
   }
 
+=======
+    background: rgba(0, 0, 0, 0.082);
+  }
+>>>>>>> af20980bf2002ae8eb8c9ecec80cecbc4063d824
   .recherchemobile input {
     width: 100%;
     background: transparent;
@@ -651,11 +660,18 @@ footer {
     border-top: none;
     border-left: none;
     border-right: none;
+<<<<<<< HEAD
     border-bottom: none;
   }
   .recherchemobile ::placeholder {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.521);
+=======
+  }
+  .recherchemobile ::placeholder {
+    font-size: 13px;
+    color: black;
+>>>>>>> af20980bf2002ae8eb8c9ecec80cecbc4063d824
   }
   .recherchemobile input:focus {
     outline: none;
@@ -710,6 +726,7 @@ footer {
   .navmobile #burger:checked + ul {
     height: auto;
   }
+<<<<<<< HEAD
 
   /**********PHOTO SOUS HEADER*************/
   .photosousheader {
@@ -746,11 +763,38 @@ footer {
   }
   .plusdeservices h3::before {
     display: none;
+=======
+  /*************BEFORE ET AFTER***********/
+  .nosoffres h3::after {
+    width: 100px;
+    right: -150px;
+  }
+  .nosoffres h3::before {
+    width: 100px;
+    left: -145px;
+  }
+  .lesplusvendus h3::after {
+    width: 100px;
+    right: -150px;
+  }
+  .lesplusvendus h3::before {
+    width: 100px;
+    left: -145px;
+  }
+  .plusdeservices h3::after {
+    width: 100px;
+    right: -150px;
+  }
+  .plusdeservices h3::before {
+    width: 100px;
+    left: -145px;
+>>>>>>> af20980bf2002ae8eb8c9ecec80cecbc4063d824
   }
   /***********************************
             DESCRIPTION 
 ************************************/
   .containerdescription p {
+<<<<<<< HEAD
     font-size: 12px;
   }
   .containerdescription {
@@ -759,6 +803,13 @@ footer {
   }
   .descriptionarticle {
     padding: 0px;
+=======
+    font-size: 15px;
+  }
+  .containerdescription {
+    max-width: 600px;
+    margin-top: -50px;
+>>>>>>> af20980bf2002ae8eb8c9ecec80cecbc4063d824
   }
   /***********************************
         PRIX MALIN - NOUVEAUTES 
@@ -772,6 +823,7 @@ footer {
     padding-top: 400px;
   }
 }
+<<<<<<< HEAD
 .prixmalinnouveautes ul {
   padding: 0;
 }
@@ -817,3 +869,5 @@ button {
 .formulaireinscription {
   align-items: flex-start;
 }
+=======
+>>>>>>> af20980bf2002ae8eb8c9ecec80cecbc4063d824
