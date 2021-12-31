@@ -95,6 +95,8 @@ button {
         PAGE PRODUIT SUR PAGE pageProduit.html
 ************************/
 
+/******** CARROUSSEL DE PHOTO DIFFERENTES COULEURS*********/
+
 .ensembleProduitPanier {
   margin-top: 50px;
 }
@@ -109,11 +111,16 @@ button {
   margin-bottom: 20px;
 }
 
-.photoPrincipale img {
-  width: 300px;
-  height: 300px;
+/******** PHOTO PRINCIPALE DU PRODUIT *********/
+.photoPrincipale {
+  align-items: center;
+  justify-content: center;
 }
-
+.photoPrincipale img {
+  width: 500px;
+  height: 500px;
+}
+/******** NOM PRODUIT ET LOGO MARQUE *********/
 .nomEtLogo img {
   width: 130px;
   height: 40px;
@@ -124,6 +131,8 @@ button {
 .nomEtLogo h5 {
   font-family: "Montserrat", sans-serif;
 }
+
+/******** ETOILES NOTE ET NOMBRE D'AVIS *********/
 .avisProduit {
   margin-top: 10px;
 }
@@ -147,9 +156,89 @@ button {
   text-decoration: underline;
   color: black;
 }
+
+/******** VERSION DU PRODUIT AVEC DIFFERENTES COULEUR *********/
 .produitCouleur {
   color: rgba(0, 0, 0, 0.5);
   margin-top: 15px;
+}
+.carreeCouleur {
+  margin-top: 15px;
+}
+.carreeCouleur li {
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  padding: 3px 10px;
+}
+/******** SAISIE DES QUANTITEES ET VALIDATION DU PANIER *********/
+.produitQuantite {
+  margin-top: 15px;
+}
+
+.panier input[type="number"] {
+  width: 100%;
+  outline: none;
+  height: 40px;
+  border-color: rgba(0, 0, 0, 0.199);
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.panier button[type="submit"] {
+  outline: none;
+  height: 40px;
+  border-color: none;
+  background-color: rgb(144, 92, 76);
+  border-radius: 0px;
+  margin-top: 10px;
+}
+
+/******** DETAILS SUR LIVRAISON ET DELAIS *********/
+.livraison,
+.frais {
+  color: rgba(0, 128, 0, 0.705);
+  margin-top: 20px;
+  font-size: 14px;
+}
+.livraison i,
+.frais i {
+  padding-right: 10px;
+}
+
+/******** LOGO RESEAUX SOCIAUX *********/
+.partager {
+  margin-top: 20px;
+}
+
+.logoPartager {
+  font-size: 40px;
+  color: rgb(144, 92, 76);
+}
+.logoPartager li {
+  margin-right: 20px;
+}
+/******** ONGLETS DESCRIPTIF ET AVIS *********/
+
+.descriptifAvis {
+  height: 500px;
+  border: 1px solid black;
+}
+.container-onglets {
+  background: grey;
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+
+.onglets {
+  width: 50%;
+}
+
+.contenu {
+  height: 70%;
+  width: 100%;
+  position: absolute;
 }
 /************************
         HEADER
