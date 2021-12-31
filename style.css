@@ -221,18 +221,24 @@ button {
 /******** ONGLETS DESCRIPTIF ET AVIS *********/
 
 .descriptifAvis {
-  height: 500px;
-  border: 1px solid black;
+  height: 1000px;
+  margin-top: 80px;
+  /* border: 1px solid black; */
 }
 .container-onglets {
-  background: grey;
   width: 100%;
-  height: 30px;
+  height: 50px;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .onglets {
   width: 50%;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenu {
@@ -240,22 +246,81 @@ button {
   width: 100%;
   position: absolute;
   opacity: 0;
-}
-
-.contenu h3,
-p {
-  padding: 20px;
+  font-size: 14px;
 }
 
 /*ANIMATION DE L'ONGLET*/
 
 .active {
-  background: yellow;
+  border: 1px solid black;
+
+  border-bottom: none;
+
+  color: black;
+  font-weight: bolder;
 }
 .activeContenu {
   opacity: 1;
 }
 
+/*TABLEAU DANS DESCRIPTIF*/
+
+table {
+  margin-top: 25px;
+  font-size: 13px;
+}
+table tbody td {
+  width: 300px;
+  padding-left: 25px;
+}
+table tbody tr {
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  border-right: none;
+  border-left: none;
+  height: 45px;
+}
+
+table td:first-child {
+  background: rgba(173, 216, 230, 0.404);
+}
+
+.descriptif {
+  margin-top: 20px;
+}
+
+.descriptif p {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+/*AVIS*/
+
+.avisLaisseSurSite {
+  /* border: 1px solid black; */
+  padding: 20px;
+  margin-bottom: 25px;
+  background: #f1f1f1;
+}
+
+.identiteAvis {
+  align-items: center;
+}
+.identiteAvis i {
+  font-size: 40px;
+  color: rgb(144, 92, 76);
+  margin-right: 20px;
+}
+.noteDuCommentaire p {
+  padding-left: 10px;
+  font-style: italic;
+}
+.noteDuCommentaire {
+  align-items: center;
+  padding: 15px 0;
+}
+.commentaire {
+  padding-top: 15px;
+  font-style: italic;
+}
 /************************
         HEADER
 ************************/
