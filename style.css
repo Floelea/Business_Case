@@ -92,6 +92,66 @@ button {
 }
 
 /************************
+        PAGE PRODUIT SUR PAGE pageProduit.html
+************************/
+
+.ensembleProduitPanier {
+  margin-top: 50px;
+}
+.plusieurPhotoproduit {
+  display: flex;
+  flex-direction: column;
+}
+
+.plusieurPhotoproduit img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.photoPrincipale img {
+  width: 300px;
+  height: 300px;
+}
+
+.nomEtLogo img {
+  width: 130px;
+  height: 40px;
+  margin-left: 30px;
+  object-fit: cover;
+}
+
+.nomEtLogo h5 {
+  font-family: "Montserrat", sans-serif;
+}
+.avisProduit {
+  margin-top: 10px;
+}
+
+.avisProduit i {
+  padding-right: 5px;
+}
+
+.nombreAvis {
+  background-color: rgb(247, 247, 16);
+  border-radius: 50px;
+  padding: 0px 10px;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.lireAvis {
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+.produitCouleur {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+}
+/************************
         HEADER
 ************************/
 header {
