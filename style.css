@@ -57,7 +57,6 @@ h5 {
 
 .formulaireinscription h5 {
   margin-bottom: 43px;
-  margin-left: 110px;
 }
 .formulaireconnexion form {
   display: flex;
@@ -70,7 +69,7 @@ button {
   padding: 8px 10px;
   border-radius: 25px;
   border: 1px solid #c8c8c8;
-  width: 90%;
+  width: 100%;
   outline: none;
 }
 .formulaireconnexion input[type="email"]::placeholder,
@@ -523,9 +522,10 @@ header nav ul .rechercher .searchbar {
   font-family: "Kurale", serif;
   position: relative;
   display: inline-block;
+  color: rgb(144, 92, 76);
 }
 
-/******************BEFORE ET AFTER DU TITRE*************/
+/* *****************BEFORE ET AFTER DU TITRE************
 .nosoffres h3::after {
   content: "";
   background-color: black;
@@ -543,7 +543,7 @@ header nav ul .rechercher .searchbar {
   position: absolute;
   top: 17px;
   left: -415px;
-}
+} */
 /***********************************
       ARTICLES DU MOMENT
 ************************************/
@@ -633,9 +633,10 @@ header nav ul .rechercher .searchbar {
   font-family: "Kurale", serif;
   position: relative;
   display: inline-block;
+  color: rgb(144, 92, 76);
 }
 
-/*****************BEFORE ET AFTER DU TITRE*************/
+/* ****************BEFORE ET AFTER DU TITRE************
 .lesplusvendus h3::after {
   content: "";
   background-color: black;
@@ -653,7 +654,7 @@ header nav ul .rechercher .searchbar {
   position: absolute;
   top: 17px;
   left: -415px;
-}
+} */
 /************************************
         PRIX MALIN - NOUVEAUTES
 *************************************/
@@ -679,9 +680,10 @@ header nav ul .rechercher .searchbar {
   font-family: "Kurale", serif;
   position: relative;
   display: inline-block;
+  color: rgb(144, 92, 76);
 }
 /*****************BEFORE ET AFTER DU TITRE*************/
-.plusdeservices h3::after {
+/* .plusdeservices h3::after {
   content: "";
   background-color: black;
   width: 400px;
@@ -698,7 +700,7 @@ header nav ul .rechercher .searchbar {
   position: absolute;
   top: 17px;
   left: -415px;
-}
+} */
 /************************************
         ANIMAUX DANS L'ESPACE
 *************************************/
@@ -842,14 +844,20 @@ footer {
   .navpc,
   .hranimauxhaut,
   .hranimauxbas,
+  .hranimaux,
   .animaux {
     display: none;
+  }
+
+  .container {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .navmobile input {
     width: auto;
   }
   .navmobile {
-    background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -866,12 +874,21 @@ footer {
     color: white;
   }
   /*************BARRE DE RECHERCHE MOBILE***********/
+  .recherchemobile button {
+    width: 100px;
+  }
+
+  .recherchemobile i {
+    color: rgb(144, 92, 76);
+    font-size: 20px;
+  }
+
   .recherchemobile {
     display: flex;
     padding: 10px 0;
-    box-shadow: rgba(50, 50, 93, 0.062) 0px 30px 60px -12px inset,
-      rgba(0, 0, 0, 0.384) 0px 18px 36px -18px inset;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 50px;
+    margin-top: 1px;
   }
 
   .recherchemobile input {
@@ -885,7 +902,7 @@ footer {
     border-bottom: none;
   }
   .recherchemobile ::placeholder {
-    font-size: 13px;
+    font-size: 15px;
     color: rgba(0, 0, 0, 0.521);
   }
   .recherchemobile input:focus {
@@ -959,25 +976,6 @@ footer {
     display: none;
   }
 
-  /*************BEFORE ET AFTER***********/
-  .nosoffres h3::after {
-    display: none;
-  }
-  .nosoffres h3::before {
-    display: none;
-  }
-  .lesplusvendus h3::after {
-    display: none;
-  }
-  .lesplusvendus h3::before {
-    display: none;
-  }
-  .plusdeservices h3::after {
-    display: none;
-  }
-  .plusdeservices h3::before {
-    display: none;
-  }
   /***********************************
             DESCRIPTION 
 ************************************/
@@ -1002,49 +1000,84 @@ footer {
     background-position: 50% 30%;
     padding-top: 400px;
   }
-}
-.prixmalinnouveautes ul {
-  padding: 0;
-}
-/***********************************
+
+  .prixmalinnouveautes ul {
+    padding: 0;
+  }
+  /***********************************
         ANIMAUX - ESPACE 
 ************************************/
 
-.animauxespace h3 {
-  position: absolute;
-  font-family: "space age";
-  bottom: 380px;
-  left: 30px;
-}
+  .animauxespace h3 {
+    position: absolute;
+    font-family: "space age";
+    bottom: 380px;
+    left: 30px;
+  }
 
-.photoespace img {
-  width: 200px;
-}
+  .photoespace img {
+    width: 200px;
+  }
 
-.photoespace .monbouton {
-  margin: 0;
-}
+  .photoespace .monbouton {
+    margin: 0;
+  }
 
-/************************************
+  /************************************
               AVANTAGES
 *************************************/
 
-.avantages {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("img/image/footer1.jpg");
-  background-repeat: no-repeat;
-  background-position: 45% 50%;
-}
-/************************************
+  .avantages {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("img/image/footer1.jpg");
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+  }
+  /************************************
               PAGE FORMULAIRE SECONNECTER.HTML
 *************************************/
 
-.formulaireconnexion input[type="email"],
-input[type="password"],
-input[type="submit"],
-button {
-  width: 100%;
-}
-.formulaireinscription {
-  align-items: flex-start;
+  .formulaireconnexion input[type="email"],
+  input[type="password"],
+  input[type="submit"],
+  button {
+    width: 100%;
+  }
+  .formulaireinscription {
+    align-items: flex-start;
+  }
+
+  /************************************
+          PAGE PRODUIT
+*************************************/
+  .plusieurPhotoproduit {
+    padding: 0;
+    align-items: center;
+  }
+
+  .plusieurPhotoproduit img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .photoPrincipale {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .photoPrincipale img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .avisProduit {
+    display: flex;
+  }
+  .nomEtLogo {
+    display: flex;
+  }
+
+  .descriptifAvis {
+    height: 1300px;
+  }
 }
